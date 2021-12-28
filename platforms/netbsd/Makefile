@@ -2,6 +2,8 @@ S?=	/usr/src/sys
 
 KMOD=	haxm
 
+CPPFLAGS+= -I$(src)/../../include -I$(src)/../../core/include
+
 # toplevel
 SRCS+=	components.c
 SRCS+=	hax_entry.c
